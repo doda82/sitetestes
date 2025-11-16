@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos - IPTV SEVEN</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="produtos.css" />
+</head>
+<body class="products-page">
+
+  <header>
+    <div class="logo">IPTV SEVEN</div>
+
+    <button id="menu-toggle" class="menu-toggle-btn" aria-label="Abrir menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active-nav"><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu-container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="products-header">
+      <h1>Nossos Planos</h1>
+      <p>Escolha o plano ideal e tenha acesso ao melhor do IPTV com qualidade, estabilidade e preço justo.</p>
+    </div>
+
+    <div class="filtro-container">
+      <div class="ordenar-wrapper">
+        <label for="ordenar-produtos">Ordenar por:</label>
+        <select id="ordenar-produtos" name="ordenar-produtos">
+          <option value="padrao">Padrão</option>
+          <option value="menor-preco">Menor Preço</option>
+          <option value="maior-preco">Maior Preço</option>
+        </select>
+      </div>
+
+      <div class="busca-wrapper">
+        <svg class="icone-lupa" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+        </svg>
+        <input id="input-busca" type="text" placeholder="Pesquisar produtos, marcas e ofertas...">
+      </div>
+    </div>
+
+            </div>
+        <div class="product-card" data-price="59.90" data-order="5">
+            <div class="product-card-img"><img src="./images/promoção-Photoroom.png" alt="KZ EDX Pro" /></div>
+            <div class="product-card-content">
+                <h3 class="product-card-name">Promoção de Lançamento</h3>
+                <p class="product-card-price">R$ 19,90</p>
+                <a href="#" class="btn">Assine Já</a>
+            </div>
+    <div class="products-grid">
+        <div class="product-card" data-price="30.00" data-order="1">
+            <div class="product-card-img"><img src="./images/Mensal.png" alt="KZ EDX Pro" /></div>
+            <div class="product-card-content">
+                <h3 class="product-card-name">IPTV - MENSAL</h3>
+                <p class="product-card-price">R$ 30,00</p>
+                <a href="#" class="btn">Assine Já</a>
+            </div>
+        </div>
+        <div class="product-card" data-price="90.00" data-order="2">
+            <div class="product-card-img"><img src="./images/Trimestral.png" alt="Carregador Power Bank" /></div>
+            <div class="product-card-content">
+                <h3 class="product-card-name">IPTV - TRIMESTRAL</h3>
+                <p class="product-card-price">R$ 90,00</p>
+                <a href="#" class="btn">Assine Já</a>
+            </div>
+        </div>
+        <div class="product-card" data-price="120.00" data-order="3">
+            <div class="product-card-img"><img src="./images/Semestral.png" alt="Apple Vision Pro" /></div>
+            <div class="product-card-content">
+                <h3 class="product-card-name">IPTV - SEMESTRAL</h3>
+                <p class="product-card-price">R$ 120,00</p>
+                <a href="#" class="btn">Assine Já</a>
+            </div>
+        </div>
+        <div class="product-card" data-price="240.00" data-order="4">
+            <div class="product-card-img"><img src="./images/Anual.png" alt="iPhone 15 Pro" /></div>
+            <div class="product-card-content">
+                <h3 class="product-card-name">IPTV - Anual</h3>
+                <p class="product-card-price">R$ 240,00</p>
+                <a href="#" class="btn">Assine Já</a>
+            </div>
+
+        </div>
+        </div>
+    </div> 
+</main>
+
+<script src="scripts.js"></script>
+<script src="produtos.js"></script>
+<div id="product-modal" class="modal-overlay">
+  <div class="modal-content">
+      
+      <button class="modal-close">&times;</button>
+
+      <div class="modal-left">
+          <img id="modal-img" src="" alt="">
+      </div>
+
+      <div class="modal-right">
+          <h2 id="modal-title"></h2>
+          <p id="modal-price"></p>
+          <p id="modal-desc">
+Tenha acesso aos melhores canais, filmes, séries e conteúdos ao vivo com imagem impecável, Nosso IPTV entrega velocidade, praticidade e entretenimento ilimitado para você aproveitar. </p>
+
+          <button class="btn btn-buy">Comprar Agora</button>
+      </div>
+
+  </div>
+</div>
+</body>
+</html>
